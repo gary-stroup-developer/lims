@@ -1,0 +1,123 @@
+p {
+    font-family: var(--ld-font-body);
+}
+.select-menu {
+    margin-left: 80%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    grid-template-areas: 
+    'admin employee1 employee2 employee3 employee7'
+    'admin employee4 employee5 employee6 employee7'
+    ;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.admin {
+    grid-area: admin;
+    
+}
+.admin .image-container {
+    background-image: url("./images/boss.jpg");
+}
+.employee1 {
+    grid-area: employee1;
+    
+}
+
+.employee1 .image-container {
+    background-image: url("./images/woman.png");
+}
+.employee2 {
+    grid-area: employee2;
+    
+}
+.employee2 .image-container {
+    background-image: url("./images/man.png");
+}
+.employee3 {
+    grid-area: employee3;
+    
+}
+.employee3 .image-container {
+    background-image: url("./images/man.png");
+}
+.employee4 {
+    grid-area: employee4;
+    
+}
+.employee4 .image-container {
+    background-image: url("./images/woman.png");
+}
+.employee5 {
+    grid-area: employee5;
+    
+}
+.employee5 .image-container {
+    background-image: url("./images/woman.png");
+}
+.employee6 {
+    grid-area: employee6;
+    
+}
+
+.employee6 .image-container {
+    background-image: url("./images/woman.png");
+}
+.employee7 {
+    grid-area: employee7;
+    
+}
+
+.employee7 .image-container {
+    background-image: url("./images/woman.png");
+}
+.tile {
+    background-color:rgb(60, 34, 116);
+    width: minmax(250px, 350px);
+    margin-top: 2rem;
+    border-radius: 8px;
+    color: #FAFAFA;
+    display: grid;
+}
+.tile__top {
+    display: grid;
+}
+
+.tile__bottom {
+    text-align: center;
+}
+.image-container {
+    display: inline-block;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 2px 4px 20px rgb(138, 104, 210);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 10rem;
+    height: 200px;
+    margin: 2rem auto;
+    
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        grid-template-areas: 
+        'admin' 
+        'employee1' 
+        'employee2' 
+        'employee3' 
+        'employee4' 
+        'employee5' 
+        'employee6' 
+        'employee7'
+        ;
+    }
+
+    .select-menu {
+        margin-left: 50%;
+    }
+}
