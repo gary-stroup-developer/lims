@@ -3,6 +3,7 @@ p {
 }
 .select-menu {
     margin-left: 80%;
+    margin-top: 25px;
 }
 .grid-container {
     display: grid;
