@@ -1,15 +1,21 @@
 {
   "name": "lims",
+  "homepage": "https://gary-stroup-developer.github.io/lims/",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gary Stroup",
   "license": "ISC",
   "dependencies": {
     "@emdgroup-liquid/liquid": "^1.4.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

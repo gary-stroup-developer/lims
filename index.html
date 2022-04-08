@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href="./node_modules/@emdgroup-liquid/liquid/dist/css/liquid.global.css"> -->
-        <link rel="stylesheet" href="./node_modules//@emdgroup-liquid/liquid/dist/css/liquid.css">
+        <link rel="stylesheet" href="./@emdgroup-liquid/liquid/dist/css/liquid.css">
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
@@ -138,6 +138,27 @@
 
             </div>
           </main>
-          <script src="./dashboard.js" async defer></script>
+          <script>
+              function myFunction() {
+                let value = document.getElementById("select-menu").value;
+                    switch(value) {
+                    case "dashboard":
+                        document.location.href = 'file:///Users/garystroup/Documents/webDevelopment/lims/index.html';
+                        break;
+                    case "tissue-culture":
+                        document.location.href = 'file:///Users/garystroup/Documents/webDevelopment/lims/tissue-culture.html';
+                        break;
+                    case "stem-cells": 
+                        document.location.href = 'file:///Users/garystroup/Documents/webDevelopment/lims/stem-cells.html';
+                        break;
+                    case "fpq-log": 
+                        document.location.href = 'file:///Users/garystroup/Documents/webDevelopment/lims/fpq-log.html';
+                        break;
+                    default: 
+                    document.location.href = 'file:///Users/garystroup/Documents/webDevelopment/lims/index.html';
+                    }
+                    
+                }
+          </script>
     </body>
 </html>
