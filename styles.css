@@ -104,6 +104,8 @@ p {
     
 }
 
+
+
 @media (max-width: 800px) {
     .grid-container {
         grid-template-areas: 
